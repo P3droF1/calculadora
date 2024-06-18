@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Funções e variáveis</title>
+    </head>
+    <script>
+
+      function soma(){
+              console.log("a função de soma está executando. . .");
+              var1 = document.getElementById("somaNum1").value;
+              var2 = document.getElementById("somaNum2").value;
+              resulSoma = parseInt(var1) + parseInt(var2);
+              console.log(var1);
+              console.log(var2);
+              console.log(resulSoma);
+        }
+        function subtração(){
+            console.log("A função de subtração esta executando");
+            var1 = document.getElementById("subNum1").value;
+            var2 = document.getElementById("subNum2").value;
+            resulSub = var1 - var2;
+            console.log(resulSub);
+        }
+        function multiplicação(){
+            console.log("A função de multiplicação esta executando");
+            var1 = document.getElementById("multNum1").value;
+            var2 = document.getElementById("multNum2").value;
+            resulSub = var1 * var2;
+            console.log(resulSub);
+        }
+        function divisão(){
+            console.log("A função de divisão esta executando");
+            var1 = document.getElementById("divNum1").value;
+            var2 = document.getElementById("divNum2").value;
+            resulSub = var1 / var2;
+            console.log(resulSub);
+        }
+
+    </script>
+    <body>
+        <div class="calculadora">
+            <input ttype="number" id="somaNum1"> + <input type="number" id="somaNum2"> <button onClick="soma()">Calcular</button>
+            <br>
+            <input type="number" id="subNum1"> - <input type="number" id="subNum2"> <button onClick="subtração()">calcular</button>
+            <br>
+            <input type="number" id="multNum1"> * <input type="number" id="multNum2"> <button onClick="multiplicação()">calcular</button>
+            <br>
+            <input type="number" id="divNum1"> / <input type="number" id="divNum2"> <button onClick="divisão()">calcular</button>
+        </div>
+    </body>
+</html>
